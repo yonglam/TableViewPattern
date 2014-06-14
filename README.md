@@ -9,7 +9,7 @@ There are some common problems when dealing with UITableView. First, the class o
 
 What is the best practise about the pattern of using UITableView? According to the above problems, we can make some useful patterns to avoid them.
 
-1. Define a protocal for entity model to generate a corresponding UITableViewCell.
+a. Define a protocal for entity model to generate a corresponding UITableViewCell.
 ````
 @protocol CellForEntityDelegate <NSObject>
 - (id<BindingDataForEntityDelegate>) cellForEntityForTableView:(UITableView *)tableView;
@@ -37,7 +37,7 @@ Every type of entity should define a category to implement this protocol.
 
 ````
 
-1. Define a protocal for every type of UITableViewCell or its subclass to bind data from corresponding entity.
+b. Define a protocal for every type of UITableViewCell or its subclass to bind data from corresponding entity.
 ````
 @protocol BindingDataForEntityDelegate<NSObject>
 - (void) bindingDataForEntity:(NSObject *)entity;
@@ -58,7 +58,7 @@ Every type of cell should define a category to implement this protocol.
 @end
 ````
 
-1. Abstract the UITableView delegate and data resource to a class from the UITableViewController. This makes the viewController cleaner and code more reusable.
+c. Abstract the UITableView delegate and data resource to a class from the UITableViewController. This makes the viewController cleaner and code more reusable.
 ````
 @interface TableViewDelegateAndDataSource : NSObject <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) void(^tableViewCellDidSelectedBlock)(id entity);
@@ -79,7 +79,7 @@ In the `tableView:cellForRowAtIndexPath:` we only need to fetch an entity, then 
 }
 ````
 
-1. In the veiw controller, we create a collection of entities,  and create an instance of `TableViewDelegateAndDataSource` with the data, then set the instance as the delegate and data source of the table view. 
+d. In the veiw controller, we create a collection of entities,  and create an instance of `TableViewDelegateAndDataSource` with the data, then set the instance as the delegate and data source of the table view. 
 ````
 @interface SubTableViewController ()
 @property (nonatomic) TableViewDelegateAndDataSource *dataResource;
