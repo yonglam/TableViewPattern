@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SubTableViewController.h
 //  TableView
 //
 //  Created by Lin Yong on 14-6-14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface SubTableViewController : UITableViewController
 
 @end

@@ -21,6 +21,12 @@
 		EEF347A1194C387800419330 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF34783194C387800419330 /* UIKit.framework */; };
 		EEF347A9194C387800419330 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEF347A7194C387800419330 /* InfoPlist.strings */; };
 		EEF347AB194C387800419330 /* TableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF347AA194C387800419330 /* TableViewTests.m */; };
+		EEF347B7194C395100419330 /* SubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF347B5194C395100419330 /* SubTableViewController.m */; };
+		EEF347B8194C395100419330 /* SubTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF347B6194C395100419330 /* SubTableViewController.xib */; };
+		EEF347BB194C3B6D00419330 /* ZombieEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF347BA194C3B6D00419330 /* ZombieEntity.m */; };
+		EEF347C1194C4C0300419330 /* ZombieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF347C0194C4C0300419330 /* ZombieTableViewCell.xib */; };
+		EEF347C4194C4C3600419330 /* ZombieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF347C3194C4C3600419330 /* ZombieTableViewCell.m */; };
+		EEF347CF194C643800419330 /* TableViewDelegateAndDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF347CE194C643800419330 /* TableViewDelegateAndDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +40,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EEF3477C194C387800419330 /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF3477C194C387800419330 /* TableViewPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF3477F194C387800419330 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEF34781194C387800419330 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EEF34783194C387800419330 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		EEF34787194C387800419330 /* TableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableView-Info.plist"; sourceTree = "<group>"; };
+		EEF34787194C387800419330 /* TableViewPattern-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewPattern-Info.plist"; sourceTree = "<group>"; };
 		EEF34789194C387800419330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEF3478B194C387800419330 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EEF3478D194C387800419330 /* TableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableView-Prefix.pch"; sourceTree = "<group>"; };
+		EEF3478D194C387800419330 /* TableViewPattern-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewPattern-Prefix.pch"; sourceTree = "<group>"; };
 		EEF3478E194C387800419330 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEF3478F194C387800419330 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EEF34792194C387800419330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEF34794194C387800419330 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EEF34795194C387800419330 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EEF34797194C387800419330 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EEF3479D194C387800419330 /* TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF3479D194C387800419330 /* TableViewPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF3479E194C387800419330 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EEF347A6194C387800419330 /* TableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewTests-Info.plist"; sourceTree = "<group>"; };
+		EEF347A6194C387800419330 /* TableViewPatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewPatternTests-Info.plist"; sourceTree = "<group>"; };
 		EEF347A8194C387800419330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEF347AA194C387800419330 /* TableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTests.m; sourceTree = "<group>"; };
+		EEF347B4194C395100419330 /* SubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTableViewController.h; sourceTree = "<group>"; };
+		EEF347B5194C395100419330 /* SubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTableViewController.m; sourceTree = "<group>"; };
+		EEF347B6194C395100419330 /* SubTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubTableViewController.xib; sourceTree = "<group>"; };
+		EEF347B9194C3B6D00419330 /* ZombieEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZombieEntity.h; sourceTree = "<group>"; };
+		EEF347BA194C3B6D00419330 /* ZombieEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZombieEntity.m; sourceTree = "<group>"; };
+		EEF347C0194C4C0300419330 /* ZombieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZombieTableViewCell.xib; sourceTree = "<group>"; };
+		EEF347C2194C4C3600419330 /* ZombieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZombieTableViewCell.h; sourceTree = "<group>"; };
+		EEF347C3194C4C3600419330 /* ZombieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZombieTableViewCell.m; sourceTree = "<group>"; };
+		EEF347CC194C62E500419330 /* EntityCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntityCellDelegate.h; sourceTree = "<group>"; };
+		EEF347CD194C643800419330 /* TableViewDelegateAndDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegateAndDataSource.h; sourceTree = "<group>"; };
+		EEF347CE194C643800419330 /* TableViewDelegateAndDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegateAndDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +99,7 @@
 		EEF34773194C387800419330 = {
 			isa = PBXGroup;
 			children = (
-				EEF34785194C387800419330 /* TableView */,
+				EEF34785194C387800419330 /* TableViewPattern */,
 				EEF347A4194C387800419330 /* TableViewTests */,
 				EEF3477E194C387800419330 /* Frameworks */,
 				EEF3477D194C387800419330 /* Products */,
@@ -92,8 +109,8 @@
 		EEF3477D194C387800419330 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEF3477C194C387800419330 /* TableView.app */,
-				EEF3479D194C387800419330 /* TableViewTests.xctest */,
+				EEF3477C194C387800419330 /* TableViewPattern.app */,
+				EEF3479D194C387800419330 /* TableViewPatternTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,27 +126,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEF34785194C387800419330 /* TableView */ = {
+		EEF34785194C387800419330 /* TableViewPattern */ = {
 			isa = PBXGroup;
 			children = (
+				EEF347C6194C5F0200419330 /* VC */,
+				EEF347C7194C5F2300419330 /* Entity */,
+				EEF347C9194C5F4800419330 /* Cell */,
+				EEF347C8194C5F3000419330 /* Protocal */,
+				EEF347D0194C644000419330 /* TableViewDelegate */,
+				EEF34786194C387800419330 /* Supporting Files */,
 				EEF3478E194C387800419330 /* AppDelegate.h */,
 				EEF3478F194C387800419330 /* AppDelegate.m */,
-				EEF34791194C387800419330 /* Main.storyboard */,
 				EEF34794194C387800419330 /* ViewController.h */,
 				EEF34795194C387800419330 /* ViewController.m */,
+				EEF34791194C387800419330 /* Main.storyboard */,
 				EEF34797194C387800419330 /* Images.xcassets */,
-				EEF34786194C387800419330 /* Supporting Files */,
 			);
+			name = TableViewPattern;
 			path = TableView;
 			sourceTree = "<group>";
 		};
 		EEF34786194C387800419330 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EEF34787194C387800419330 /* TableView-Info.plist */,
+				EEF34787194C387800419330 /* TableViewPattern-Info.plist */,
 				EEF34788194C387800419330 /* InfoPlist.strings */,
 				EEF3478B194C387800419330 /* main.m */,
-				EEF3478D194C387800419330 /* TableView-Prefix.pch */,
+				EEF3478D194C387800419330 /* TableViewPattern-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,18 +169,64 @@
 		EEF347A5194C387800419330 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EEF347A6194C387800419330 /* TableViewTests-Info.plist */,
+				EEF347A6194C387800419330 /* TableViewPatternTests-Info.plist */,
 				EEF347A7194C387800419330 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EEF347C6194C5F0200419330 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EEF347B4194C395100419330 /* SubTableViewController.h */,
+				EEF347B5194C395100419330 /* SubTableViewController.m */,
+				EEF347B6194C395100419330 /* SubTableViewController.xib */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		EEF347C7194C5F2300419330 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EEF347B9194C3B6D00419330 /* ZombieEntity.h */,
+				EEF347BA194C3B6D00419330 /* ZombieEntity.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		EEF347C8194C5F3000419330 /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				EEF347CC194C62E500419330 /* EntityCellDelegate.h */,
+			);
+			name = Protocal;
+			sourceTree = "<group>";
+		};
+		EEF347C9194C5F4800419330 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEF347C0194C4C0300419330 /* ZombieTableViewCell.xib */,
+				EEF347C2194C4C3600419330 /* ZombieTableViewCell.h */,
+				EEF347C3194C4C3600419330 /* ZombieTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		EEF347D0194C644000419330 /* TableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EEF347CD194C643800419330 /* TableViewDelegateAndDataSource.h */,
+				EEF347CE194C643800419330 /* TableViewDelegateAndDataSource.m */,
+			);
+			name = TableViewDelegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EEF3477B194C387800419330 /* TableView */ = {
+		EEF3477B194C387800419330 /* TableViewPattern */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEF347AE194C387800419330 /* Build configuration list for PBXNativeTarget "TableView" */;
+			buildConfigurationList = EEF347AE194C387800419330 /* Build configuration list for PBXNativeTarget "TableViewPattern" */;
 			buildPhases = (
 				EEF34778194C387800419330 /* Sources */,
 				EEF34779194C387800419330 /* Frameworks */,
@@ -167,14 +236,14 @@
 			);
 			dependencies = (
 			);
-			name = TableView;
+			name = TableViewPattern;
 			productName = TableView;
-			productReference = EEF3477C194C387800419330 /* TableView.app */;
+			productReference = EEF3477C194C387800419330 /* TableViewPattern.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EEF3479C194C387800419330 /* TableViewTests */ = {
+		EEF3479C194C387800419330 /* TableViewPatternTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEF347B1194C387800419330 /* Build configuration list for PBXNativeTarget "TableViewTests" */;
+			buildConfigurationList = EEF347B1194C387800419330 /* Build configuration list for PBXNativeTarget "TableViewPatternTests" */;
 			buildPhases = (
 				EEF34799194C387800419330 /* Sources */,
 				EEF3479A194C387800419330 /* Frameworks */,
@@ -185,9 +254,9 @@
 			dependencies = (
 				EEF347A3194C387800419330 /* PBXTargetDependency */,
 			);
-			name = TableViewTests;
+			name = TableViewPatternTests;
 			productName = TableViewTests;
-			productReference = EEF3479D194C387800419330 /* TableViewTests.xctest */;
+			productReference = EEF3479D194C387800419330 /* TableViewPatternTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EEF34777194C387800419330 /* Build configuration list for PBXProject "TableView" */;
+			buildConfigurationList = EEF34777194C387800419330 /* Build configuration list for PBXProject "TableViewPattern" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +286,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EEF3477B194C387800419330 /* TableView */,
-				EEF3479C194C387800419330 /* TableViewTests */,
+				EEF3477B194C387800419330 /* TableViewPattern */,
+				EEF3479C194C387800419330 /* TableViewPatternTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,7 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF347B8194C395100419330 /* SubTableViewController.xib in Resources */,
 				EEF34798194C387800419330 /* Images.xcassets in Resources */,
+				EEF347C1194C4C0300419330 /* ZombieTableViewCell.xib in Resources */,
 				EEF3478A194C387800419330 /* InfoPlist.strings in Resources */,
 				EEF34793194C387800419330 /* Main.storyboard in Resources */,
 			);
@@ -249,9 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF347B7194C395100419330 /* SubTableViewController.m in Sources */,
+				EEF347BB194C3B6D00419330 /* ZombieEntity.m in Sources */,
 				EEF34796194C387800419330 /* ViewController.m in Sources */,
 				EEF34790194C387800419330 /* AppDelegate.m in Sources */,
 				EEF3478C194C387800419330 /* main.m in Sources */,
+				EEF347CF194C643800419330 /* TableViewDelegateAndDataSource.m in Sources */,
+				EEF347C4194C4C3600419330 /* ZombieTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +343,7 @@
 /* Begin PBXTargetDependency section */
 		EEF347A3194C387800419330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EEF3477B194C387800419330 /* TableView */;
+			target = EEF3477B194C387800419330 /* TableViewPattern */;
 			targetProxy = EEF347A2194C387800419330 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,9 +452,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableView/TableView-Prefix.pch";
-				INFOPLIST_FILE = "TableView/TableView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TableView/TableViewPattern-Prefix.pch";
+				INFOPLIST_FILE = "TableView/TableViewPattern-Info.plist";
+				PRODUCT_NAME = TableViewPattern;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,9 +465,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableView/TableView-Prefix.pch";
-				INFOPLIST_FILE = "TableView/TableView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TableView/TableViewPattern-Prefix.pch";
+				INFOPLIST_FILE = "TableView/TableViewPattern-Info.plist";
+				PRODUCT_NAME = TableViewPattern;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -412,8 +487,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TableViewTests/TableViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TableViewTests/TableViewPatternTests-Info.plist";
+				PRODUCT_NAME = TableViewPatternTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -430,8 +505,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableView/TableView-Prefix.pch";
-				INFOPLIST_FILE = "TableViewTests/TableViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TableViewTests/TableViewPatternTests-Info.plist";
+				PRODUCT_NAME = TableViewPatternTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -440,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EEF34777194C387800419330 /* Build configuration list for PBXProject "TableView" */ = {
+		EEF34777194C387800419330 /* Build configuration list for PBXProject "TableViewPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEF347AC194C387800419330 /* Debug */,
@@ -449,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEF347AE194C387800419330 /* Build configuration list for PBXNativeTarget "TableView" */ = {
+		EEF347AE194C387800419330 /* Build configuration list for PBXNativeTarget "TableViewPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEF347AF194C387800419330 /* Debug */,
@@ -457,7 +532,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EEF347B1194C387800419330 /* Build configuration list for PBXNativeTarget "TableViewTests" */ = {
+		EEF347B1194C387800419330 /* Build configuration list for PBXNativeTarget "TableViewPatternTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEF347B2194C387800419330 /* Debug */,
