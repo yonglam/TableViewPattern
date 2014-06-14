@@ -10,14 +10,14 @@ There are some common problems when dealing with UITableView. First, the class o
 What is the best practise about the pattern of using UITableView? According to the above problems, we can make some useful patterns to avoid them.
 
 a. Define a protocal for entity model to generate a corresponding UITableViewCell.
-````
+````objc
 @protocol CellForEntityDelegate <NSObject>
 - (id<BindingDataForEntityDelegate>) cellForEntityForTableView:(UITableView *)tableView;
 @end
 ````
 
 Every type of entity should define a category to implement this protocol.
-````
+````objc
 @interface ZombieEntity (CellForEnity) <CellForEntityDelegate>
 - (UITableViewCell *) cellForEntityForTableView:(UITableView *)tableView;
 @end
@@ -38,14 +38,14 @@ Every type of entity should define a category to implement this protocol.
 ````
 
 b. Define a protocal for every type of UITableViewCell or its subclass to bind data from corresponding entity.
-````
+````objc
 @protocol BindingDataForEntityDelegate<NSObject>
 - (void) bindingDataForEntity:(NSObject *)entity;
 @end
 ````
 
 Every type of cell should define a category to implement this protocol.
-````
+````objc
 @interface ZombieTableViewCell (BindingData) <BindingDataForEntityDelegate>
 - (void)bindingDataForEntity:(NSObject *)entity;
 @end
@@ -59,7 +59,7 @@ Every type of cell should define a category to implement this protocol.
 ````
 
 c. Abstract the UITableView delegate and data resource to a class from the UITableViewController. This makes the viewController cleaner and code more reusable.
-````
+````objc
 @interface TableViewDelegateAndDataSource : NSObject <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) void(^tableViewCellDidSelectedBlock)(id entity);
 - (instancetype) initWithDataArr:(NSArray *)dataArr;
@@ -70,7 +70,7 @@ Note that we also define a block property for cell selected action. It should be
 
 In the `tableView:cellForRowAtIndexPath:` we only need to fetch an entity, then get a cell from it (`CellForEntityDelegate`), and then render the cell by passing the entity to it(`BindingDataForEntityDelegate`). Code is really simple and magical.
 
-````
+````objc
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<CellForEntityDelegate> entity = self.dataArr[indexPath.row];
     id<BindingDataForEntityDelegate> cell = [entity cellForEntityForTableView:tableView];
@@ -80,7 +80,7 @@ In the `tableView:cellForRowAtIndexPath:` we only need to fetch an entity, then 
 ````
 
 d. In the veiw controller, we create a collection of entities,  and create an instance of `TableViewDelegateAndDataSource` with the data, then set the instance as the delegate and data source of the table view. 
-````
+````objc
 @interface SubTableViewController ()
 @property (nonatomic) TableViewDelegateAndDataSource *dataResource;
 @end
