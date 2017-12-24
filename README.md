@@ -1,11 +1,11 @@
 TableViewPattern
 ================
 
-##Problems
+## Problems
 
 There are some common problems when dealing with UITableView. Firstly, the class of UITableViewController is easy to be large and hard to maintain. Secondly, the logic and code of UITableView's data source and delegate is hard to be reusable. Finally, the logic in `tableView:cellForRowAtIndexPath:` always be mussy because you have to 1) determined which type of cell to be created based on the type of corresponding entity, and then 2) custom the cell with the information of entity.  
 
-##Pattern
+## Pattern
 
 What is the best practise about the pattern of using UITableView? According to the above problems, we can make some useful patterns to avoid them.
 
