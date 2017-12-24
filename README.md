@@ -99,11 +99,11 @@ d. In the veiw controller, we create a collection of entities,  and create an in
 
 ````
 
-##Conclusion
+## Conclusion
 
 Every time you have a new type entity and corresponding cell, just 1) make the entity confirm to the `CellForEntityDelegate` protocol, 2) make the cell confirm to the `BindingDataForEntityDelegate` protocol, 3) create an instance of `TableViewDelegateAndDataSource` and assign it to your table view. All this seperate your code to the very place and finally make your code cleaner and more reusable. There may be some mistakes, if you find one please let me know. 
 
-##Related Article
+## Related Article
 
 - [How to avoid big and clumsy UITableViewController on iOS?](http://programmers.stackexchange.com/questions/177668/how-to-avoid-big-and-clumsy-uitableviewcontroller-on-ios) 
 - [Lighter View Controllers](http://www.objc.io/issue-1/lighter-view-controllers.html#controllers)
